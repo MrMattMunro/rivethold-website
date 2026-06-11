@@ -3,12 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rivethold</title>
-  <meta name="description" content="Rivethold — a steampunk co-op platformer. Coming 2026.">
+  <title>Rivethold — A steampunk co-op platformer</title>
+  <meta name="description" content="Rivethold is a 1–3 player couch co-op steampunk platformer. Rebuild a town that a magitech experiment tore apart, and push back what came after.">
   <meta property="og:title" content="Rivethold">
-  <meta property="og:description" content="A steampunk co-op platformer. Coming 2026.">
+  <meta property="og:description" content="A 1–3 player couch co-op steampunk platformer. Coming 2026.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://rivethold.com">
+  <meta property="og:image" content="https://rivethold.com/images/rivethold_pixelart_logo.png">
   <style>
     :root {
       --bg: #0e0c0a;
@@ -27,29 +28,44 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 2rem;
+      padding: 2rem 1.5rem;
       text-align: center;
       letter-spacing: 0.01em;
     }
-    h1 {
-      margin: 0;
-      font-size: clamp(3rem, 12vw, 7rem);
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
+    main {
+      max-width: 36rem;
+      width: 100%;
     }
-    p.tagline {
-      margin: 1.5rem 0 0;
-      font-size: clamp(1rem, 2.5vw, 1.25rem);
+    img.logo {
+      display: block;
+      width: 100%;
+      max-width: 560px;
+      height: auto;
+      margin: 0 auto 2.5rem;
+      image-rendering: pixelated;
+      image-rendering: crisp-edges;
+    }
+    p.description {
+      margin: 0 0 1.25rem;
+      font-size: clamp(1rem, 2.2vw, 1.15rem);
+      line-height: 1.6;
+    }
+    p.description:last-of-type {
+      margin-bottom: 2.5rem;
+    }
+    p.format {
+      font-size: 0.95rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
       color: var(--ink);
-      max-width: 32ch;
+      margin: 0 0 0.5rem;
     }
     p.status {
-      margin: 3rem 0 0;
       font-size: 0.95rem;
       letter-spacing: 0.25em;
       text-transform: uppercase;
       color: var(--ink-dim);
+      margin: 0;
     }
     hr {
       margin: 4rem auto 1.5rem;
@@ -65,10 +81,21 @@
   </style>
 </head>
 <body>
-  <h1>Rivethold</h1>
-  <p class="tagline">A steampunk co-op platformer.</p>
-  <p class="status">Coming 2026</p>
-  <hr>
-  <footer>Munro Solutions Pty Ltd</footer>
+  <main>
+    <img class="logo" src="images/rivethold_pixelart_logo.png" alt="Rivethold">
+
+    <p class="description">
+      A trading hub at the crossing of six roads. A magitech experiment to power its first airship tore something open — and the Fall scattered everyone who survived.
+    </p>
+    <p class="description">
+      Years later, settlers are trickling back. You and up to two friends arrive as strangers — a Woodcutter, a Scavenger, a Tinkerer — to help rebuild what's left and push back what came after.
+    </p>
+
+    <p class="format">1–3 player couch co-op steampunk platformer</p>
+    <p class="status">Coming 2026</p>
+
+    <hr>
+    <footer>Munro Solutions Pty Ltd</footer>
+  </main>
 </body>
 </html>
